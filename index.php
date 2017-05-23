@@ -1,2 +1,2 @@
-<?php echo 'fuck' ?>
+<?php echo 'fuckme' ?>
 
