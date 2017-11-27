@@ -37,7 +37,7 @@ $u = $_REQUEST['uri'];
 $GLOBALS['active'] = $u;
 
 
-$sitePath = 'https://' . $_SERVER['HTTP_HOST'] . "";
+$sitePath = 'http://' . $_SERVER['HTTP_HOST'] . "";
 
 define("SITEPATH", $sitePath);
 require_once("appRoute.php");
