@@ -1,4 +1,4 @@
-<nav>
+<nav class='gradient'>
 	<div id='logo'><a href="<?php echo SITEPATH ?>/home"><img src="<?php echo SITEPATH; ?>/assets/img/logo.svg" /></a></div>
 	<ul>
 		<?php
