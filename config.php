@@ -3,9 +3,9 @@ $nav = array();
 	//site nav
 	$navSite = array();
 	$navSite[] = array("name"=>"Home","url"=>"");
-	$navSite[] = array("name"=>"portfolio","url"=>"portfolio");
-	$navSite[] = array("name"=>"resume","url"=>"resume");
-	$navSite[] = array("name"=>"contact","url"=>"contact");
+	$navSite[] = array("name"=>"Portfolio","url"=>"portfolio");
+	$navSite[] = array("name"=>"Resume","url"=>"resume");
+	$navSite[] = array("name"=>"Contact","url"=>"contact");
 
 $GLOBALS['nav'] = $navSite;
 
