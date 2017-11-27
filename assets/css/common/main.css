@@ -21,9 +21,9 @@ a{color:#fff;} ul{color:#fff;list-style-type:none;width:100%;} li{width:100%;} l
 	#menu{display:none;}
 	nav{background-color:#ddae66;border-bottom:#f7dc7a solid 7px;position:fixed;width: 100px;height: 100%;top:0px;z-index:50;}
 	nav ul{height: 100%;text-transform:uppercase;width: auto;display: inline-block;}
-	nav ul li, nav ul li a{cursor:pointer;padding:0;height: auto; line-height:80px;font-family:'Oswald', sans-serif;font-weight: 700; color:#2e2920;-webkit-transition: all 0.2s ease-in-out;-webkit-transition-delay: 0s;-moz-transition: all 0.2s ease-in-out 0.03s;-ms-transition: all 0.2s ease-in-out 0.03s;-o-transition: all 0.2s ease-in-out 0.03s;transition: all 0.2s ease-in-out 0.03s;}
+	nav ul li, nav ul li a{cursor:pointer;padding:0;height: auto; line-height:80px;font-family:'Oswald', sans-serif;font-weight: 700; color:#2e2920;-webkit-transition: all 0.1s ease-in-out;-webkit-transition-delay: 0s;-moz-transition: all 0.1s ease-in-out 0.02s;-ms-transition: all 0.1s ease-in-out 0.02s;-o-transition: all 0.1s ease-in-out 0.02s;transition: all 0.1s ease-in-out 0.02s;}
 	.active, .active *, nav ul li:hover{padding:0 12px;background-color:#3e372c;color:#ded2bf;font-family:'Oswald', sans-serif;font-weight: 700;}
 	nav ul li:hover a{color:#ded2bf!important;} 
 	nav ul li.active{padding: 0 12px;}
-	nav ul li{width:90px;display: inline-block; float: left;text-align: right;}
+	nav ul li{background-color:#ddae66;width:90px;display: inline-block; float: left;text-align: right;}
 	/*NAV*/
