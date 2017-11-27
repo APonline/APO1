@@ -17,7 +17,7 @@ $route->add("", function() {
 	$GLOBALS['active'] = "";
 	
 	getHead();
-	include('view/burgers.php');
+	include('view/home.php');
 	getFoot();
 });
 //Portfolio
@@ -36,7 +36,7 @@ $route->add("/portfolio", function() {
 	$GLOBALS['active'] = "portfolio";
 	
 	getHead();
-	include('view/burgers.php');
+	include('view/portfolio.php');
 	getFoot();
 });
 //Resume
@@ -55,7 +55,7 @@ $route->add("/resume", function() {
 	$GLOBALS['active'] = "resume";
 	
 	getHead();
-	include('view/burgers.php');
+	include('view/resume.php');
 	getFoot();
 });
 //Contact
@@ -74,7 +74,7 @@ $route->add("/contact", function() {
 	$GLOBALS['active'] = "contact";
 	
 	getHead();
-	include('view/burgers.php');
+	include('view/contact.php');
 	getFoot();
 });
 /*PAGE VIEWS*/
