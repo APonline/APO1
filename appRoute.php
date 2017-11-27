@@ -91,7 +91,7 @@ function getHead(){
 }
 function getClasses(){
 	include('model/class.mrClean.php');
-	include('model/class.posts.php');
+	//include('model/class.posts.php');
 }
 function getFoot(){
 	include("template/footer.php");
