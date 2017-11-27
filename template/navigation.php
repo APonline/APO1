@@ -1,5 +1,9 @@
 <nav class='gradient'>
-	<div id='logo'><a href="<?php echo SITEPATH ?>/home"><img src="<?php echo SITEPATH; ?>/assets/img/logo.svg" /></a></div>
+	<div id='logo'>
+		<p>ANDREW PHILLIPS</p>
+		<a href="<?php echo SITEPATH ?>/home"><img src="<?php echo SITEPATH; ?>/assets/img/logo.svg" style='width: 100%;' /></a>
+		<p>ONLINE</p>
+	</div>
 	<ul>
 		<?php
 		$dir = $GLOBALS['dir'];
