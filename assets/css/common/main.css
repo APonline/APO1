@@ -12,7 +12,7 @@ a{color:#fff;} ul{color:#fff;list-style-type:none;width:100%;} li{width:100%;} l
 
 
 	body{background-position: 50% 0;background-repeat: no-repeat;background-color: #130502;width:100%;height: auto;position: relative;display: block;}
-	body{background-image: linear-gradient(rgba(38, 110, 47,1) ,rgba(9, 15, 12,.9)), url("https://cdn-03.independent.ie/world-news/and-finally/article34223422.ece/4bd56/AUTOCROP/h342/PANews_P-05e7d806-447b-4038-8766-09468307a989_I1.jpg") right 50% / 100% no-repeat;
+	body{linear-gradient(to left, rgba(38, 110, 47, 0.3) 0%, rgba(9, 15, 12, 1) 70%), url("https://cdn-03.independent.ie/world-news/and-finally/article34223422.ece/4bd56/AUTOCROP/h342/PANews_P-05e7d806-447b-4038-8766-09468307a989_I1.jpg") right 50% / 36% no-repeat
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -22,19 +22,18 @@ a{color:#fff;} ul{color:#fff;list-style-type:none;width:100%;} li{width:100%;} l
     background-origin: initial;
     background-clip: initial;
     background-color: initial;}
+    
 	
 	section{position:relative;margin-top:87px;width: calc(100% - 40px);margin: 0 auto;margin-top: 140px;}
-	.gradient{background-image: linear-gradient(rgb(38, 110, 47) ,rgb(9, 15, 12));
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-    }
+	.grid {
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    box-shadow: rgb(0, 0, 0) 0px 0px 60px inset;
+    background-image: url(../../img/gridtile.png);}
+    
+	.gradient{background-image: linear-gradient(rgb(38, 110, 47) ,rgb(9, 15, 12));background-position-x: initial;background-position-y: initial;background-size: initial;background-repeat-x: initial;background-repeat-y: initial;background-attachment: initial;background-origin: initial;background-clip: initial;background-color: initial;}
 	/*DEFAULTS*/
 
 	/*NAV*/
