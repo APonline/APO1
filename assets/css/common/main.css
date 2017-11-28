@@ -11,8 +11,8 @@ a{color:#fff;} ul{color:#fff;list-style-type:none;width:100%;} li{width:100%;} l
 /*RESET*/
 
 
-	body{background-position: 50% 0;background-repeat: no-repeat;background-color: #130502;width:100%;height: auto;position: relative;display: block;}
-	body{background: linear-gradient(to right, rgba(38, 110, 47, 0.3) 0%, rgba(9, 15, 12, 0.7) 50%, rgb(0, 0, 0) 70%), url("https://cdn-03.independent.ie/world-news/and-finally/article34223422.ece/4bd56/AUTOCROP/h342/PANews_P-05e7d806-447b-4038-8766-09468307a989_I1.jpg") 50% 50% / 100% no-repeat;}
+	body{background-position: 50% 0;background-repeat: no-repeat;background-color: #130502;width:100%;min-height:calc(100vh - 40px);height: auto;position: relative;display: block;}
+	body{background: linear-gradient(to right, rgba(38, 110, 47, 0.3) 0%, rgba(9, 15, 12, 0.7) 50%, rgb(0, 0, 0) 70%), url("http://www.se7en-tech.com/assets/img/banner1.png") 50% 0% / cover no-repeat;}
     
 	
 	section{position:relative;margin-top:87px;width: calc(100% - 40px);margin: 0 auto;margin-top: 140px;}
