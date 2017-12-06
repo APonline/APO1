@@ -4,18 +4,18 @@
 //Home
 $route->add("", function() {
 	$siteTitle = "Andrew Phillips Online";
-	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips. 
-	With works ranging from E-commerce web apps, Professional sports marketing, 
+	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips.
+	With works ranging from E-commerce web apps, Professional sports marketing,
 	to unique independent projects, you are sure to find and endless passion
 	for beautiful coding and creativity.";
-	
+
 	define("siteTitle", $siteTitle);
 	define("siteDesc", $siteDesc);
-	
+
 	getClasses();
-	
+
 	$GLOBALS['active'] = "";
-	
+
 	getHead();
 	include('view/home.php');
 	getFoot();
@@ -23,18 +23,18 @@ $route->add("", function() {
 //Portfolio
 $route->add("/portfolio", function() {
 	$siteTitle = "Andrew Phillips Online";
-	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips. 
-	With works ranging from E-commerce web apps, Professional sports marketing, 
+	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips.
+	With works ranging from E-commerce web apps, Professional sports marketing,
 	to unique independent projects, you are sure to find and endless passion
 	for beautiful coding and creativity.";
-	
+
 	define("siteTitle", $siteTitle);
 	define("siteDesc", $siteDesc);
-	
+
 	getClasses();
-	
+
 	$GLOBALS['active'] = "portfolio";
-	
+
 	getHead();
 	include('view/portfolio.php');
 	getFoot();
@@ -42,18 +42,18 @@ $route->add("/portfolio", function() {
 //Resume
 $route->add("/resume", function() {
 	$siteTitle = "Andrew Phillips Online";
-	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips. 
-	With works ranging from E-commerce web apps, Professional sports marketing, 
+	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips.
+	With works ranging from E-commerce web apps, Professional sports marketing,
 	to unique independent projects, you are sure to find and endless passion
 	for beautiful coding and creativity.";
-	
+
 	define("siteTitle", $siteTitle);
 	define("siteDesc", $siteDesc);
-	
+
 	getClasses();
-	
+
 	$GLOBALS['active'] = "resume";
-	
+
 	getHead();
 	include('view/resume.php');
 	getFoot();
@@ -61,18 +61,18 @@ $route->add("/resume", function() {
 //Contact
 $route->add("/contact", function() {
 	$siteTitle = "Andrew Phillips Online";
-	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips. 
-	With works ranging from E-commerce web apps, Professional sports marketing, 
+	$siteDesc = "The Digital Portfolio of Designer/Developer Andrew Phillips.
+	With works ranging from E-commerce web apps, Professional sports marketing,
 	to unique independent projects, you are sure to find and endless passion
 	for beautiful coding and creativity.";
-	
+
 	define("siteTitle", $siteTitle);
 	define("siteDesc", $siteDesc);
-	
+
 	getClasses();
-	
+
 	$GLOBALS['active'] = "contact";
-	
+
 	getHead();
 	include('view/contact.php');
 	getFoot();
@@ -86,7 +86,7 @@ $route->submit();
 
 function getHead(){
 	include("template/header.php");
-	include('template/navigation.php');
+	//include('template/navigation.php');
 	return;
 }
 function getClasses(){
@@ -98,7 +98,7 @@ function getFoot(){
 	return;
 }
 
-function makeSEOURL($toURL){	
+function makeSEOURL($toURL){
 	//Lower case everything
 	$toURL = strtolower($toURL);
 	//Make alphanumeric (removes all other characters)
@@ -112,7 +112,7 @@ function makeSEOURL($toURL){
 
 function undoSEOURL($toName){
 	$toName = str_replace('-', ' ', $toName);
-	$toName = preg_replace('/(?<!\s)-(?!\s)/', ' ', $toName); 
+	$toName = preg_replace('/(?<!\s)-(?!\s)/', ' ', $toName);
 	$toName = ucwords($toName);
 	return $toName;
 }

@@ -9,37 +9,25 @@ $nav = array();
 
 $GLOBALS['nav'] = $navSite;
 
-/*$sort = array();
+$work = array();
 	//site nav
-	$sortSite = array();
-	$sortSite[] = array("name"=>"Featured","url"=>"featured");
-	$sortSite[] = array("name"=>"No.","url"=>"number");
-	$sortSite[] = array("name"=>"Discovered","url"=>"discovered");
-	$sortSite[] = array("name"=>"Rating","url"=>"rating");
-	$sortSite[] = array("name"=>"Vegetarian","url"=>"vegetarian");
-	$sortSite[] = array("name"=>"Spicy","url"=>"spicy");
-	$sortSite[] = array("name"=>"Seasonal","url"=>"seasonal");
-	$sortSite[] = array("name"=>"Extinct","url"=>"extinct");
-	$sortSite[] = array("name"=>"Challenge","url"=>"challenge");
-	$sortSite[] = array("name"=>"Price Hi","url"=>"price-hi");
-	$sortSite[] = array("name"=>"Price LO","url"=>"price-lo");
-	$sortSite[] = array("name"=>"Fusion","url"=>"fusion");
-	$sortSite[] = array("name"=>"Modded","url"=>"modded");
-	$sortSite[] = array("name"=>"Location","url"=>"location");
-	$sortSite[] = array("name"=>"Kitchen","url"=>"kitchen");
-	
-$GLOBALS['sort'] = $sortSite;*/
+	$workSite = array();
+	$workSite[] = array("name"=>"Demo Reel","url"=>"work/demo-reel");
+	$workSite[] = array("name"=>"Web","url"=>"work/web");
+	$workSite[] = array("name"=>"Graphic","url"=>"work/graphic");
+	$workSite[] = array("name"=>"Creative","url"=>"work/creative");
+
+$GLOBALS['work'] = $workSite;
 
 
 require_once("model/class.route.php");
 $route = new Route();
-$u = $_REQUEST['uri'];
-$GLOBALS['active'] = $u;
+//$u = $_REQUEST['uri'];
+//$GLOBALS['active'] = $u;
 
 
-$sitePath = 'http://' . $_SERVER['HTTP_HOST'] . "";
+$sitePath = 'http://' . $_SERVER['HTTP_HOST'] . "/APO/dev/web.APO";
 
 define("SITEPATH", $sitePath);
 require_once("appRoute.php");
 ?>
-
