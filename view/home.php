@@ -8,7 +8,7 @@ include("controller/home.php");
     <div id='home-title' class='billboard billboard-bottom -large' data-type="background" data-speed=".3" data-style="lineHeight" data-default="130">
       <h3>Andrew</h3>
       <h2>Phillips</h2>
-      <h1>Online</h1>
+      <h1>MULTIMEDIA</h1>
     </div>
   </div>
 </section>
@@ -40,7 +40,7 @@ include("controller/home.php");
 
 
       <div class='billboard billboard-right -medium'>
-        <h2>WORK</h2>
+        <h3>WORK</h3>
       </div>
       <div class='clear'></div>
       <?php include('template/workNav.php'); ?>
@@ -49,19 +49,20 @@ include("controller/home.php");
 
 <section id='pg4'>
   <div class='container'>
-    <div class='billboard billboard-top -small align-left'>
+    <div class='billboard billboard-top -medium align-left'>
       <h3>CV</h3>
     </div>
 
-    <div class='cont-large'>
+    <div class='cv'></div>
+      <div class='cont-large'>
       <table>
         <tr>
           <td>
             <div>
-              <h1 class='-small'>Experience</h1>
+              <h3 class='-small'>Experience</h3><br />
                 <h4 class='-xx-small'>02/2017 - present</h4>
                 <h2 class='-x-small'>Client Relations / Full Stack</h2>
-                <h3 class='-x-small'>SO Creative Inc.</h3>
+                <h1 class='-x-small'>SO Creative Inc.</h1>
                 <p class='job-desc'>
                   Met with clients to assess their needs. Also dealt with various projects and learning Android.
                 </p>
@@ -69,7 +70,7 @@ include("controller/home.php");
 
                 <h4 class='-xx-small'>09/2016 - 02/2017</h4>
                 <h2 class='-x-small'>Full Stack</h2>
-                <h3 class='-x-small'>Be A Part Of</h3>
+                <h1 class='-x-small'>Be A Part Of</h1>
                 <p class='job-desc'>
                   Developing web apps and addons for ecommerce solutions.
                 </p>
@@ -77,7 +78,7 @@ include("controller/home.php");
 
                 <h4 class='-xx-small'>03/2016 - 08/2016</h4>
                 <h2 class='-x-small'>Full Stack (contract)</h2>
-                <h3 class='-x-small'>St.Joseph Communications</h3>
+                <h1 class='-x-small'>St.Joseph Communications</h1>
                 <p class='job-desc'>
                   Handled legacy client work while focusing primarily on an internal project utilizing a custom api.
                 </p>
@@ -85,7 +86,7 @@ include("controller/home.php");
 
                 <h4 class='-xx-small'>03/2016</h4>
                 <h2 class='-x-small'>Animator (contract)</h2>
-                <h3 class='-x-small'>Innocean Worldwide Canada</h3>
+                <h1 class='-x-small'>Innocean Worldwide Canada</h1>
                 <p class='job-desc'>
                   Was tasked to help create some animated ads for the web.
                 </p>
@@ -93,7 +94,7 @@ include("controller/home.php");
 
                 <h4 class='-xx-small'>06/2013 - 02/2016</h4>
                 <h2 class='-x-small'>Developer</h2>
-                <h3 class='-x-small'>Channel 1 Media Solutions</h3>
+                <h1 class='-x-small'>Channel 1 Media Solutions</h1>
                 <p class='job-desc'>
                   Handled a wide range of projects for pro sports teams as well as stadium groups.
                 </p>
@@ -101,7 +102,7 @@ include("controller/home.php");
 
                 <h4 class='-xx-small'>06/2013 - present</h4>
                 <h2 class='-x-small'>Full Stack</h2>
-                <h3 class='-x-small'>Phillips Temperature Monitoring Solutions</h3>
+                <h1 class='-x-small'>Phillips Temperature Monitoring Solutions</h1>
                 <p class='job-desc'>
                   Created a new cloud based platform for temperature logging, as well as microcomputer development.
                 </p>
@@ -109,7 +110,7 @@ include("controller/home.php");
 
                 <h4 class='-xx-small'>06/2012 - present</h4>
                 <h2 class='-x-small'>Multimedia Developer</h2>
-                <h3 class='-x-small'>Freelance</h3>
+                <h1 class='-x-small'>Freelance</h1>
                 <p class='job-desc'>
                   From design work, small to large web development. Nothing is off my radar to enhance my skillset.
                 </p>
@@ -117,7 +118,7 @@ include("controller/home.php");
           </td>
           <td>
             <div>
-              <h1 class='-small'>Skills</h1>
+              <h3 class='-small'>Skills</h3><br />
 
                 <h2 class='-x-small'>General</h2>
                 <ul>
@@ -167,11 +168,11 @@ include("controller/home.php");
           </td>
           <td>
             <div>
-              <h1 class='-small'>Education</h1>
+              <h3 class='-small'>Education</h3><br />
                 <h2 class='-x-small'>Durham College</h2>
                 <h1 class='-x-small'>Multimedia Design</h1>
-                <h4 class='-x-small'>Associates Degree</h4>
-                <h3 class='-x-small'>2013</h3>
+                <h3 class='-xx-small'>Associates Degree</h3>
+                <h4 class='-xx-small'>2013</h4>
                 <br />
 
               <h1 class='-small'>Accolades</h1>
@@ -185,13 +186,22 @@ include("controller/home.php");
         </tr>
       </table>
     </div>
+
   </div>
 </section>
 
 <section id='pg5'>
   <div class='container'>
-    <div class='billboard billboard-left -large'>
-      <h1>CONNECT</h1>
+    <div class='billboard billboard-top -medium align-center'>
+      <h3>CONNECT</h3>
+    </div>
+    <div class='clear'></div>
+
+    <div class='cont'>
+      <div class='billboard billboard-left align-left' style='display:inline-block;'>
+        <h2 class='-small' style='height: 50px;'>Email</h2>
+        <h3 class='-x-small' style='height: 50px;'>andrew@andrewphillips.online</h3>
+      </div>
     </div>
   </div>
 </section>

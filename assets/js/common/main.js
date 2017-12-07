@@ -16,7 +16,7 @@ $(document).ready(function(){
     var docH = $(document).height();
     var currTop = $(window).scrollTop();
 
-    if(currTop < (docH / 2)){
+    if(currTop < (docH / 3)){
       //$('body').addClass('dt-above').removeClass('dt-below');
       $('#darkness').css('display','block');
     }else{
