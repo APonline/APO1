@@ -17,10 +17,10 @@ $(document).ready(function(){
     var currTop = $(window).scrollTop();
 
     if(currTop < (docH / 2)){
-      $('body').addClass('dt-above').removeClass('dt-below');
+      //$('body').addClass('dt-above').removeClass('dt-below');
       $('#darkness').css('display','block');
     }else{
-      $('body').addClass('dt-below').removeClass('dt-above');
+      //$('body').addClass('dt-below').removeClass('dt-above');
       $('#darkness').css('display','none');
     }
   });

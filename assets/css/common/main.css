@@ -39,8 +39,7 @@ a{color:#fff;} ul{color:#fff;list-style-type:none;width:100%;} li{width:100%;} l
 /*FOUNDATION*/
 body{background-color: #000;width:100%;height: auto;position: relative;display: block;}
 .dt-below, .dt-above{background-repeat: no-repeat;background-color: #130502;width:100%;height: auto;position: relative;display: block;}
-.dt-above{min-height:100vh;background-position: 50% 0;background: linear-gradient(to right, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 1) 70%), 0% 60% / cover url('../../img/dt.JPG') no-repeat fixed;}
-.dt-below{min-height:200px;background-position: 0% 50%;background: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 1) 20%), 0% 60% / cover url('../../img/dtBelow.jpg') no-repeat fixed;}
+.dt-above{min-height:100vh;background-position: 50% 0%;background: linear-gradient(to right, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 1) 70%), 0% 60% / cover url('../../img/dt.JPG') no-repeat fixed;}
 
 #darkness{position:fixed;opacity: 0;
 background-position: 50% 0;background-repeat: no-repeat;width:100%;min-height:100vh;height: auto;display: block;
@@ -53,7 +52,7 @@ section{position:relative;min-width:100%;min-height:756px;width: calc(100vw - 40
 .cont-large{position:relative;display:block;margin:0 18px;width: 100%;line-height: 25px;letter-spacing: 1px;}
 .cont-large table, .cont-large tr{width:100%;}
 .cont-large td{width:calc(100% / 3);}
-.cont-large ul{margin-bottom:15px;font-family: 'Kameron', serif;font-size:.7em;line-height:18px;list-style-type: disc;margin-left:15px;}
+.cont-large ul{margin-top:8px;margin-bottom:8px;font-family: 'Kameron', serif;font-size:.7em;line-height:18px;list-style-type: disc;margin-left:15px;}
 .grid {top: 0px;width: 100vw;height: 100vh;position: fixed;box-shadow: rgb(0, 0, 0) 0px 0px 60px inset;background-image: url("../img/gridtile.png");}
 
 .gradient{background-image: linear-gradient(rgb(38, 110, 47) ,rgb(9, 15, 12));background-position-x: initial;background-position-y: initial;background-size: initial;background-repeat-x: initial;background-repeat-y: initial;background-attachment: initial;background-origin: initial;background-clip: initial;background-color: initial;}
@@ -100,6 +99,7 @@ h4{
 .-medium{font-size:3em;}
 .-small{font-size:2em;}
 .-x-small{font-size:1em;}
+.-xx-small{font-size:.4em;}
 .billboard{word-break: break-all;padding:15px;line-height: 130px;}
 /*.billboard *{line-height: .9em;}*/
 /*DEFAULTS*/
@@ -127,15 +127,65 @@ h4{
 #pg2 .cont::first-letter{font-weight: 700;color:red;}
 
 #pg3{
-	background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(198, 198, 198) 80%);background-position-x: initial;background-position-y: initial;background-size: initial;background-repeat-x: initial;background-repeat-y: initial;background-attachment: initial;background-origin: initial;background-clip: initial;background-color: initial;
+  background-color: #000;
+}
+#pg3 .skinOutter{
+  position:absolute;
+  display:block;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+#pg3 .skinShirt{
+  position:absolute;
+  display:block;
+  top: 0px;
+  width:100%;
+  height:100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, .6) 60%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 1) 100%);background-position-x: initial;background-position-y: initial;background-size: initial;background-repeat-x: initial;background-repeat-y: initial;background-attachment: initial;background-origin: initial;background-clip: initial;background-color: initial;
+}
+#pg3 .skin{
+  position:relative;
+  display:block;
+  width:100%;
+  height:100%;
+	background: 0% 0% / 200% 200% url('../../img/p.png') no-repeat;background-position-x: initial;background-position-y: initial;background-size: initial;background-repeat-x: initial;background-repeat-y: initial;background-attachment: initial;background-origin: initial;background-clip: initial;background-color: initial;
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(198, 198, 198, .4) 80%), 50% 50% / cover url('../../img/polygon.png') no-repeat;background-position-x: initial;background-position-y: initial;background-size: initial;background-repeat-x: initial;background-repeat-y: initial;background-attachment: initial;background-origin: initial;background-clip: initial;background-color: initial;*/
+  -webkit-animation: animatedBackground 25s linear infinite;
+    -moz-animation: animatedBackground 25s linear infinite;
+    animation: animatedBackground 25s linear infinite;
+}
+@-webkit-keyframes animatedBackground {
+  0% {
+    transform: translate(0%,0%);
+    opacity:0;
+  }
+
+  50% {
+    transform: translate(25%,12%);
+    opacity:1;
+  }
+
+  100% {
+    transform: translate(50%,25%);
+    opacity:0;
+  }
 }
 
 #pg4{
-	min-height:1000px;
-	background-color:#c5c5c5;
+	min-height:1200px;
+	background-color:#000;
+  /*background-color:#c5c5c5;*/
+}
+#pg4 .job-desc{
+  font-family: 'Kameron', serif;
+  color:#fff;
+  font-size:.6em;
+  line-height:16px;
 }
 #pg5{
-	background-color:transparent;
+  height:100%;
+  min-height:200px;background-position: 50% 0%;background: linear-gradient(to top, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 1) 100%), 50% 0% / cover url('../../img/dtBelow.jpg') no-repeat fixed;
 }
 /*PAGEs*/
 
@@ -163,3 +213,42 @@ h4{
 	worknav ul li.active{}
 	worknav ul li{clear:both;letter-spacing: 1px;width:auto;padding:0;display: inline-block; float: right;text-align: right;}
 	/*WORKNAV*/
+
+
+
+  /*POLYGON*/
+#container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  opacity:.4;
+}
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.poly-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
+.controls {
+  font-smoothing: subpixel-antialiased;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: none;
+}
+
+.hide {
+  opacity: 0;
+}
+  /*POLYGON*/

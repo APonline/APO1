@@ -28,13 +28,23 @@ include("controller/home.php");
 </section>
 
 <section id='pg3'>
-  <div class='container'>
-    <div class='billboard billboard-right -medium'>
-      <h2>WORK</h2>
-    </div>
-    <div class='clear'></div>
-    <?php include('template/workNav.php'); ?>
+  <div class='skinOutter'>
+    <div class='skin'></div>
+    <div class='skinShirt'></div>
   </div>
+    <div class='container'>
+      <!--<div id="container" class="poly-container">
+        <div id="output" class="poly-container"></div>
+      </div>
+      <div id="controls" class="controls"></div>-->
+
+
+      <div class='billboard billboard-right -medium'>
+        <h2>WORK</h2>
+      </div>
+      <div class='clear'></div>
+      <?php include('template/workNav.php'); ?>
+    </div>
 </section>
 
 <section id='pg4'>
@@ -49,6 +59,60 @@ include("controller/home.php");
           <td>
             <div>
               <h1 class='-small'>Experience</h1>
+                <h4 class='-xx-small'>02/2017 - present</h4>
+                <h2 class='-x-small'>Client Relations / Full Stack</h2>
+                <h3 class='-x-small'>SO Creative Inc.</h3>
+                <p class='job-desc'>
+                  Met with clients to assess their needs. Also dealt with various projects and learning Android.
+                </p>
+                <br />
+
+                <h4 class='-xx-small'>09/2016 - 02/2017</h4>
+                <h2 class='-x-small'>Full Stack</h2>
+                <h3 class='-x-small'>Be A Part Of</h3>
+                <p class='job-desc'>
+                  Developing web apps and addons for ecommerce solutions.
+                </p>
+                <br />
+
+                <h4 class='-xx-small'>03/2016 - 08/2016</h4>
+                <h2 class='-x-small'>Full Stack (contract)</h2>
+                <h3 class='-x-small'>St.Joseph Communications</h3>
+                <p class='job-desc'>
+                  Handled legacy client work while focusing primarily on an internal project utilizing a custom api.
+                </p>
+                <br />
+
+                <h4 class='-xx-small'>03/2016</h4>
+                <h2 class='-x-small'>Animator (contract)</h2>
+                <h3 class='-x-small'>Innocean Worldwide Canada</h3>
+                <p class='job-desc'>
+                  Was tasked to help create some animated ads for the web.
+                </p>
+                <br />
+
+                <h4 class='-xx-small'>06/2013 - 02/2016</h4>
+                <h2 class='-x-small'>Developer</h2>
+                <h3 class='-x-small'>Channel 1 Media Solutions</h3>
+                <p class='job-desc'>
+                  Handled a wide range of projects for pro sports teams as well as stadium groups.
+                </p>
+                <br />
+
+                <h4 class='-xx-small'>06/2013 - present</h4>
+                <h2 class='-x-small'>Full Stack</h2>
+                <h3 class='-x-small'>Phillips Temperature Monitoring Solutions</h3>
+                <p class='job-desc'>
+                  Created a new cloud based platform for temperature logging, as well as microcomputer development.
+                </p>
+                <br />
+
+                <h4 class='-xx-small'>06/2012 - present</h4>
+                <h2 class='-x-small'>Multimedia Developer</h2>
+                <h3 class='-x-small'>Freelance</h3>
+                <p class='job-desc'>
+                  From design work, small to large web development. Nothing is off my radar to enhance my skillset.
+                </p>
             </div>
           </td>
           <td>
@@ -114,7 +178,7 @@ include("controller/home.php");
                 <ul>
                   <li>Interactive Design Committee (2013-2016)</li>
                   <li>Communicator Awards - Renewal Microsite (2015)</li>
-                  <li>Summit International Awards - Renewal Microsite 'Gold Winner' (2015)</li>
+                  <li>Summit International Awards - Renewal Microsite (2015)</li>
                 </ul>
             </div>
           </td>
