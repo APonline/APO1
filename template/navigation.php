@@ -12,7 +12,7 @@
 
 			for($x=0; $x<count($nav); $x++){
 				$pageCurr = $nav[$x]['url'];
-				
+
 				if($active==$pageCurr){
 					$GLOBALS['page'] = $nav[$x]['name'];
 					echo "<li class='active'><a href='".SITEPATH."/".$nav[$x]['url']."'>".$nav[$x]['name']."</a></li>";
@@ -28,4 +28,3 @@
 
 <div id='shade'></div>
 <section>
-

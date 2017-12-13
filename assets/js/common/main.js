@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(document).on("scroll mousedown DOMMouseScroll mousewheel keydown", function (e) {if (e.which > 0 || e.type === "mousedown" || e.type === "mousewheel") {$('html, body').stop();}});
 
+  $('.link').bind('click', routing);
 
   $('#home-title h1, #home-title h2, #home-title h3').okshadow({
     color: 'rgba(0,0,0,0.5)',
@@ -27,7 +28,46 @@ $(document).ready(function(){
 
 parallaxIt();
 
+
+  routing(pg);
+
+	//window back actions
+	/*window.onpopstate = function(e){
+		routing(e.state);
+	};*/
+
 });
+
+function routing(e){
+  e.preventDefault();
+
+  var action = $(this).attr('data-action');
+
+  switch(action){
+    case 'work-category':
+      $('worknav .link').parent().removeClass('active');
+      $(this).parent().addClass('active');
+
+      var pg = $(this).attr('data-id');
+
+      $('.sliderItem').removeClass('activeSlide');
+      $('.sliderItem[data-id="'+pg+'"]').addClass('activeSlide');
+      break;
+
+    case 'project':
+      break;
+
+    default:
+      break;
+
+  }
+
+
+
+  /*var name = obj.attr('data-name');
+	var newUrl = name.replace(/\s+/g, '-');
+  window.history.pushState({}, name, "../"+newUrl);*/
+}
 
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;

@@ -33,16 +33,13 @@ include("controller/home.php");
     <div class='skinShirt'></div>
   </div>
     <div class='container'>
-      <!--<div id="container" class="poly-container">
-        <div id="output" class="poly-container"></div>
-      </div>
-      <div id="controls" class="controls"></div>-->
-
-
       <div class='billboard billboard-right -medium'>
         <h3>WORK</h3>
       </div>
       <div class='clear'></div>
+
+      <?php include('template/portfolio.php'); ?>
+
       <?php include('template/workNav.php'); ?>
     </div>
 </section>
@@ -123,7 +120,6 @@ include("controller/home.php");
                 <h2 class='-x-small'>General</h2>
                 <ul>
                   <li>Adobe Creative Suite</li>
-                  <li>Adobe Creative Suite</li>
                   <li>Mac/Linux</li>
                   <li>RESTful APIs</li>
                   <li>Git</li>
@@ -175,11 +171,11 @@ include("controller/home.php");
                 <h4 class='-xx-small'>2013</h4>
                 <br />
 
-              <h1 class='-small'>Accolades</h1>
+              <h3 class='-small'>Accolades</h3>
                 <ul>
-                  <li>Interactive Design Committee (2013-2016)</li>
-                  <li>Communicator Awards - Renewal Microsite (2015)</li>
-                  <li>Summit International Awards - Renewal Microsite (2015)</li>
+                  <li><h4 class='-xx-small'>(2013-2016)</h4>Interactive Design Committee</li>
+                  <li><h4 class='-xx-small'>(2015)</h4>Communicator Awards - Renewal Microsite</li>
+                  <li><h4 class='-xx-small'>(2015)</h4>Summit International Awards - Renewal Microsite</li>
                 </ul>
             </div>
           </td>
