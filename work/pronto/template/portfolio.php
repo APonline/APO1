@@ -1,7 +1,20 @@
 <div class='slider'>
 	<!--demo reel-->
   <div class='sliderItem activeSlide' data-id='1'>
-    <iframe src="https://player.vimeo.com/video/64397912" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <?php
+      $proj = $GLOBALS['projects'];
+      $projCount=0;
+      for($x=0; $x<count($proj); $x++){
+        if($proj[$x]['category']=="demo reel"){
+          include('template/projectCard.php');
+          $projCount++;
+        }
+      }
+
+      if($projCount==0){
+        echo "<h1 class='-x-small'>No Current Demo Reel.</h1>";
+      }
+    ?>
   </div>
 
 	<!--web-->

@@ -1,4 +1,48 @@
-<?php include("controller/resume.php"); ?>
+<?php
+include("controller/home.php");
+
+?>
+
+<section id='pg1' data-type="background" data-speed="1.7" data-style="fadeOut">
+  <div class='container'>
+    <div id='home-title' class='billboard billboard-bottom -large' data-type="background" data-speed=".3" data-style="lineHeight" data-default="130">
+      <h3>Andrew</h3>
+      <h2>Phillips</h2>
+      <h1>MULTIMEDIA</h1>
+    </div>
+  </div>
+</section>
+
+<section id='pg2'>
+  <div class='container'>
+    <div class='billboard billboard-top -medium align-center'>
+      <h3>VISION</h3>
+    </div>
+    <div class='clear'></div>
+    <div class='cont'>
+      Being creative means taking risks and ignoring doubt and facing fears. It means breaking with routine and doing something different for the sake of doing something different. It means mapping out a thousand different routes to reach one destination. It means challenging yourself every day. Being creative means searching for inspiration in even the most mundane places. It means you’re asking stupid questions. It means creating without critiquing. Being creative means you know how to find the similarities and differences between two completely random ideas.
+      <br /><br />
+      Being creative means you’re thinking.
+    </div>
+  </div>
+</section>
+
+<section id='pg3'>
+  <div class='skinOutter'>
+    <div class='skin'></div>
+    <div class='skinShirt'></div>
+  </div>
+    <div class='container'>
+      <div class='billboard billboard-right -medium'>
+        <h3>WORK</h3>
+      </div>
+      <div class='clear'></div>
+
+      <?php include('template/portfolio.php'); ?>
+
+      <?php include('template/workNav.php'); ?>
+    </div>
+</section>
 
 <section id='pg4'>
   <div class='container'>
@@ -139,5 +183,21 @@
       </table>
     </div>
 
+  </div>
+</section>
+
+<section id='pg5'>
+  <div class='container'>
+    <div class='billboard billboard-top -medium align-center'>
+      <h3>CONNECT</h3>
+    </div>
+    <div class='clear'></div>
+
+    <div class='cont'>
+      <div class='billboard billboard-left align-left' style='display:inline-block;'>
+        <h2 class='-small' style='height: 50px;'>Email</h2>
+        <h3 class='-x-small' style='height: 50px;'>andrew@andrewphillips.online</h3>
+      </div>
+    </div>
   </div>
 </section>
